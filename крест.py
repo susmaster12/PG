@@ -6,8 +6,8 @@ def draw(screen):
     pygame.draw.line(screen, "white", (0, height - 1), (width - 1, 0),5)
 
 if __name__ == '__main__':
-    w, h = map(int, input().split())
     try:
+        w, h = map(int, input().split())
         if type(w) != int  or type(h) != int:
             raise Exception
         pygame.init()
